@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Idle Fishing"
+run/main_scene="uid://wt0mwrace1wq"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+AudioPlayer="*res://scenes/audio_player.tscn"
 
 [editor_plugins]
 
