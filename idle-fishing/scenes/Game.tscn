@@ -1,8 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://wt0mwrace1wq"]
+[gd_scene load_steps=6 format=3 uid="uid://wt0mwrace1wq"]
 
 [ext_resource type="Script" uid="uid://b5op6tn3og8it" path="res://scenes/game_manager.gd" id="1_ibkli"]
+[ext_resource type="Texture2D" uid="uid://cvpunnf6ks2po" path="res://assets/sprites/Buttons/C_ShoppingCart.png" id="2_cpr0p"]
+[ext_resource type="Texture2D" uid="uid://tu7pmks6kvg3" path="res://assets/sprites/ButtonsPressed/CP_ShoppingCart.png" id="3_78awf"]
+[ext_resource type="Texture2D" uid="uid://cm47yu02oh0c4" path="res://assets/sprites/Buttons/C_Sound.png" id="4_s0nni"]
+[ext_resource type="Texture2D" uid="uid://d1qe4j1dubgtl" path="res://assets/sprites/Buttons/C_SoundOff.png" id="5_s0nni"]
 
 [node name="Game" type="Node2D"]
 
 [node name="GameManager" type="Node" parent="."]
 script = ExtResource("1_ibkli")
+
+[node name="Shop" type="TextureButton" parent="."]
+offset_top = 544.0
+offset_right = 100.0
+offset_bottom = 644.0
+texture_normal = ExtResource("2_cpr0p")
+texture_pressed = ExtResource("3_78awf")
+stretch_mode = 0
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 96.0
+offset_top = 544.0
+offset_right = 196.0
+offset_bottom = 644.0
+toggle_mode = true
+texture_normal = ExtResource("4_s0nni")
+texture_pressed = ExtResource("5_s0nni")
