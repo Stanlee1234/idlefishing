@@ -27,3 +27,5 @@ offset_bottom = 644.0
 toggle_mode = true
 texture_normal = ExtResource("4_s0nni")
 texture_pressed = ExtResource("5_s0nni")
+
+[connection signal="toggled" from="TextureButton" to="GameManager" method="_on_sound_toggled"]
